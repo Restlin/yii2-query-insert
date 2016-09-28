@@ -1,8 +1,11 @@
 <?php
-
-namespace app\components;
-
-use yii;
+/**
+ * @copyright Copyright (c) 2016 Ilya Shumilov
+ * @version 1.0.0
+ * @link https://github.com/restlin/yii2-query-insert
+ */
+namespace restlin\queryinsert;
+use Yii;
 
 /**
  * Add insert command to default Query
