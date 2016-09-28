@@ -10,3 +10,13 @@ select id,login,type,now()
 from rights 
 where date_in>date_trunc('day',now());
 ```
+
+Example usage:
+
+```php
+$query = new QueryInsert;
+$query->select(['login','docid'])
+->from($tblTemp)
+->where(['in','docid' , $docids]);
+$query->insert(DA::tableName(),['login','docid']);
+```
